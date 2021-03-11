@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css learning</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .navbar-menu{
+            background-color: rgb(56, 52, 52, 0.25);
+            padding: 10px;
+            text-align: center;
+
+        }
+        .navbar-menu a{
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+            cursor: pointer;
+        }
+        .dropdwon-container{
+            display: inline;
+            position:relative;
+
+        }
+        .dropdwon-content{
+            position: absolute;
+            top: 0px;
+            left: 101px;
+            background-color: rgb(90, 85, 85, 0.10);
+            text-align: left;
+            display: none;
+            padding: 20px;
+            border-radius: 5px;
+        
+            
+         
+
+        }
+        .dropdwon-content a{
+            display: block;
+            margin: 3px;
+           background-color: rgba(248, 15, 65, 0.1);
+           border-radius: 2px;
+           color: white;
+           padding: 5px 10px;
+
+
+        }
+        .dropdwon-content a:hover{
+            background-color: gray;
+        }
+        .dropdwon-container:hover .dropdwon-content{
+            display:block;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+ 
+
+  <div class="navbar-menu">
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+     <div class="dropdwon-container1">
+        <a href="#">Department</a>
+       <div class="dropdwon-content1">
+        <div class="dropdwon-container">
+            <a href="#">Computer</a>
+            <div class="dropdwon-content">
+                <a href="#">Software</a>
+                <a href="#">Hardware</a>
+                <a href="#">Networks</a>
+                <a href="#">Hacking</a>
+            </div>
+          
+          </div>
+          <a href="#">Electical</a>
+          <a href="#">Textail</a>
+          <a href="#">Makernical</a>
+       </div>
+     </div>
+      <a href="#">Contact</a>
+      <a href="#">Services</a>
+  </div>
+</body>
+</html>
